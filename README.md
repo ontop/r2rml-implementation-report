@@ -1,3 +1,17 @@
+# How to evaluate Ontop
+
+1. Modify [testcases/config-postgresql.ini](test-cases/config-postgresql.ini) or [testcases/config-mysql.ini](test-cases/config-mysql.ini) to config Ontop
+2. Stop MySQL or PostgreSQL on your local machine (if any)
+3. ```shell
+$ cd testcases
+$ python3 -m pip install -r test-cases/requirements.txt
+$ python3 test.py config-mysql.ini 
+# or 
+$ python3 test.py config-postgresql.ini 
+```
+
+-------------
+
 # R2RML Implementation report
 
 Test the capabilities of your R2RML engine with the [R2RML test cases](https://www.w3.org/2001/sw/rdb2rdf/test-cases/). Use the resources provided in this repository to automatically generate an EARL report with your results. Following the configuration steps to include your results in the [R2RML implementation report ](https://kg-construct.github.io/r2rml-implementation-report/).
@@ -70,5 +84,5 @@ engine_command: java -jar morph-rdb.jar -p properties.properties # command to ru
 
 
 Overview of the testing steps:
-![Testing setp](misc/test.png?raw=true "Testing setp")
+![Testing step](misc/test.png?raw=true "Testing step")
 
