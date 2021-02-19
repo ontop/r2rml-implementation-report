@@ -55,7 +55,7 @@ def database_up():
     if database_system == "mysql":
         os.system("docker-compose -f databases/docker-compose-mysql.yml stop")
         os.system("docker-compose -f databases/docker-compose-mysql.yml rm --force")
-        os.system("docker-compose -f databases/docker-compose-mysql.yml up -d && sleep 30")
+        os.system("docker-compose -f databases/docker-compose-mysql.yml up -d && sleep 60")
     elif database_system == "postgresql":
         os.system("docker-compose -f databases/docker-compose-postgresql.yml stop")
         os.system("docker-compose -f databases/docker-compose-postgresql.yml rm --force")
