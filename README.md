@@ -6,7 +6,7 @@
 
 ```shell
 $ cd testcases
-$ python3 -m pip install -r test-cases/requirements.txt
+$ python3 -m pip install -r requirements.txt
 $ python3 test.py config-mysql.ini 
 $ python3 test.py config-postgresql.ini 
 ```
